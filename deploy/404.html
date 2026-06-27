@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found – David Olofintila</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230D1B2A'/><text x='16' y='22' text-anchor='middle' font-family='Inter,sans-serif' font-weight='800' font-size='16' fill='%23E9A84C'>DO</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+      background: var(--white);
+    }
+    .error-page__code {
+      font-size: clamp(6rem, 20vw, 12rem);
+      font-weight: 900;
+      color: var(--surface);
+      line-height: 1;
+      letter-spacing: -0.06em;
+      position: relative;
+      -webkit-text-stroke: 2px var(--border);
+    }
+    .error-page__icon {
+      font-size: 3rem;
+      margin-bottom: 16px;
+    }
+    .error-page__title {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+    .error-page__desc {
+      font-size: 1rem;
+      color: var(--slate);
+      max-width: 440px;
+      margin-bottom: 36px;
+      line-height: 1.7;
+    }
+    .error-page__actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .error-page__logo {
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .error-page__logo-mark {
+      width: 34px;
+      height: 34px;
+      background: var(--ink);
+      color: var(--amber);
+      border-radius: var(--radius-sm);
+      display: grid;
+      place-items: center;
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="error-page__logo" aria-label="Back to home">
+    <span class="error-page__logo-mark">DO</span>
+    David Olofintila
+  </a>
+
+  <div class="error-page">
+    <div class="error-page__code" aria-hidden="true">404</div>
+    <div class="error-page__icon">🗺️</div>
+    <h1 class="error-page__title">This page doesn't exist</h1>
+    <p class="error-page__desc">
+      Looks like you've followed a link to a page that's been moved or never existed. No worries — the portfolio is just one click away.
+    </p>
+    <div class="error-page__actions">
+      <a href="index.html" class="btn btn--primary">
+        ← Back to Portfolio
+      </a>
+      <a href="index.html#contact" class="btn btn--outline">
+        Get in Touch
+      </a>
+    </div>
+  </div>
+</body>
+</html>
